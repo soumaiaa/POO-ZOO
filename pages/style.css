@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Ruthie&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=Ruthie&display=swap');
+/* body{
+    font-family: 'Ruthie', cursive;
+   
+} */
+.header
+{
+    height: 300px;
+    width: 100%;
+}
+.header1
+{
+    height: 150px;
+    width: 30%;
+
+}
+.body1
+{
+    background-image: url("../image/terrestre.gif");
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: 'Dancing Script', cursive;
+}
+.body2
+{
+    background-image: url('../image/6029969-bleu-ciel-skyscape-fond-concept-vectoriel.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: 'Dancing Script', cursive;
+}
+.form
+{
+    background-image:url("../image/feuilles-noix-coco-fond-texture-sable-fond-sable-ete-fond-sable-fin-fond-sable_9949-64.avif") ;
+    font-family: 'Dancing Script', cursive;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+.bg
+{
+    background-color: rgba(56, 55, 55, 0.364);
+}
+.in
+{
+    background-color: rgba(56, 55, 55, 0.364);
+    
+
+}
+.aquari
+{
+    background-image: url('../image/aquariums.gif');
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: 'Dancing Script', cursive;
+}
+h1{
+    font-family: 'Dancing Script', cursive;
+}
+.indexform{
+    font-family: 'Dancing Script', cursive;
+    font-size: 2rem;
+}
+.h1{
+    font-family: 'Dancing Script', cursive;
+    font-size: 2rem;
+}
+
+/* //gsap
+section {
+    position: relative;
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .bgg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+   */
+  /* h1 {
+    color: white;
+    text-shadow: 1px 1px 3px black;
+    z-index: 1;
+    font-size: 3em;
+    font-weight: 400;
+  } */
