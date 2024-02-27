@@ -32,7 +32,7 @@ class enclosManager
    
     public function findAllenclos($zooid)
     {
-        $request = $this->db->query('SELECT * FROM enclos WHERE id_zoo=' . $zooid);
+        $request = $this->db->query('SELECT * FROM enclos WHERE id_zoo=' .$zooid);
         $enclos = $request->fetchAll();
         // foreach ($enclos as $enclo) {
         //     $tabl = [];

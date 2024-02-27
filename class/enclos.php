@@ -115,6 +115,10 @@ abstract class enclos
         return $arrayAnimals;
     }
      abstract public function entretenir();  
-
+     public function remove(animaux $animal){  
+                $this->allAnimals[] = $animal;
+                $this->nombAnimaux--;
+                return true;  
+    }
    
 }

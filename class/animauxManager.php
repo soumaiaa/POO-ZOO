@@ -22,6 +22,16 @@ class animauxManager
             $animal->setId($id);
 
     }
+    public function find($id)
+    {
+        $request = $this->db->query('SELECT * FROM animaux WHERE  id=' . $id);
+        $animal = $request->fetch();
+        $class = $animal['espece'];
+        $new = new $class($animal);
+        $new->setId($animal['id']);
+        return $animal;
+        
+    }
     public function findAllanimaux($encloid)
     {
         $request = $this->db->query('SELECT * FROM animaux WHERE id_enclos='.$encloid);
@@ -33,6 +43,7 @@ class animauxManager
         $deleteannimal =  $this->db->prepare('DELETE FROM animaux WHERE id = ?');
          $deleteannimal->execute([$id]);
     }
+ 
    
 
 }

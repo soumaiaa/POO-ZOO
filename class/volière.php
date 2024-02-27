@@ -44,17 +44,18 @@ class  volière extends enclos
     public function addAnimal(animaux $animal)
     {
         if ($animal instanceof aigles) {
-            if (count($this->allAnimals) < self::MAX_ANIMALS) {
+            if ($this->nombAnimaux < 6) {
                 $this->allAnimals[] = $animal;
                 $this->nombAnimaux++;
-                return count($this->allAnimals);
+                return true;
             } else {
                 echo "il y a un nombre max d animaux";
+                return false;
             }
-            }else{
-               
-                echo "Cette animal ne peut pas rentrer dans cet enclos";
-            }
-        return count($this->allAnimals);       
+        }else{
+           
+            echo "Cette animal ne peut pas rentrer dans cet enclos";
+        }
+    
     }
 }

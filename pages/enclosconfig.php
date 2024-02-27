@@ -3,7 +3,7 @@ require_once('../config/autoload.php');
 require_once('../config/db.php');
 $enclosManager = new enclosManager($db);
 $zooManager = new zooManager($db);
-var_dump($_SESSION['id']);
+// var_dump($_SESSION['id']);
 // die;
 if (
    isset($_POST['nomEclos']) && !empty($_POST['nomEclos']) &&
@@ -24,13 +24,19 @@ if (
       'id_zoo' => $_POST['id_zoo']
    ]);
    $myzoo = $zooManager->find($_POST['id_employe']);
-   var_dump($myzoo);
+   // var_dump($myzoo);
 
    $newzoo = new zoo($myzoo);
    $newzoo->setId($myzoo['id']);
    // $detec = $newzoo->detectenclos($enclos);
-  
+   $encloscount=$enclosManager->findAllenclos($myzoo['id']);
+   // var_dump(count($encloscount));
+   
+   
+   
+   if(count($encloscount)<6){
    $enclosManager->addDb($enclos);
+   }
    // $_SESSION['id']=($_POST['id_employe']);
    // var_dump( $_SESSION['id']);
    header('Location: ./votreZoo.php'); 
